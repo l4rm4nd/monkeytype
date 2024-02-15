@@ -11,7 +11,7 @@ COPY . .
 # Install project dependencies
 RUN npm cache clean --force && npm run install-all
 
-# Expose any necessary ports (if your application listens on a specific port)
+# Expose any necessary ports
 EXPOSE 3000
 
 # Start your application
