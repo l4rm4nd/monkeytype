@@ -7,7 +7,8 @@ services:
     image: l4rm4nd/monkeytype:latest
     restart: on-failure
     volumes:
-      - .:/app
+      - /path/to/firebase-config.ts:/app/frontend/src/ts/constants/firebase-config.ts:ro
+      - /path/to/.firebaserc:/app/frontend/.firebaserc:ro
     ports:
       - 127.0.0.1:8888:3000
       - 127.0.0.1:5005:5005
